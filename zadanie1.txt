@@ -1,0 +1,51 @@
+using System;
+
+namespace ConsoleApp3
+{
+    class Program
+ {
+    public static void Main(string[] args)
+    {
+           
+    }
+}
+}
+    class lib1
+{
+    public static string stpow(string a, int b)
+    {
+        Console.WriteLine("¬ведите строку");
+        a = Console.ReadLine();
+        Console.WriteLine("¬ведите число повторений");
+        b = Convert.ToInt32(Console.ReadLine());
+        for (int i = 0; i < b; i++)
+        {
+            a = a + a;
+        }
+        return a;
+        
+    }
+    public static string rev(string a)
+    {
+        char[] sReverse = a.ToCharArray();
+        Array.Reverse(sReverse);
+        return new string(sReverse);
+    }
+    public static string remov(string str, string s)
+    {
+        Console.WriteLine("¬ведите строку");
+        str = Console.ReadLine();
+        Console.WriteLine("¬ведите подстроку");
+        s = Console.ReadLine();
+        str = str.Replace(s, "");
+        return str;
+    }
+
+    public static int leng(string str, int leng)
+    {
+        Console.WriteLine("¬ведите строку");
+        str = Console.ReadLine();
+        leng = str.Length;
+        return leng;
+    }
+}
